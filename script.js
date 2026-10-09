@@ -37,3 +37,37 @@ $('#wishlistTop').addEventListener('click',()=>{state.search='';$('#searchInput'
 $('#clearFilters').addEventListener('click',()=>{state.category='All';state.brand='All';state.search='';$('#searchInput').value='';renderProducts()});$('#viewAll').addEventListener('click',()=>setCategory('All'));$('#accountBtn').addEventListener('click',()=>toast('Account sign-in is a demo feature'));
 $('#newsletterForm').addEventListener('submit',e=>{e.preventDefault();const email=e.currentTarget.querySelector('input').value;toast(`Thanks for subscribing, ${email}! (demo)`);e.currentTarget.reset()});document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeCart();closeCheckout()}});
 renderProducts();renderCart();
+// Hero banner slider
+const heroSlides = document.querySelectorAll(".hero-slide");
+const heroDots = document.querySelectorAll(".hero-dot");
+const prevButton = document.querySelector("#heroPrev");
+const nextButton = document.querySelector("#heroNext");
+
+let currentHeroSlide = 0;
+
+function showHeroSlide(index) {
+  if (!heroSlides.length) return;
+
+  currentHeroSlide =
+    (index + heroSlides.length) % heroSlides.length;
+
+  heroSlides.forEach((slide, i) => {
+    slide.classList.toggle("active", i === currentHeroSlide);
+  });
+
+  heroDots.forEach((dot, i) => {
+    dot.classList.toggle("active", i === currentHeroSlide);
+  });
+}
+
+prevButton?.addEventListener("click", () => {
+  showHeroSlide(currentHeroSlide - 1);
+});
+
+nextButton?.addEventListener("click", () => {
+  showHeroSlide(currentHeroSlide + 1);
+});
+
+heroDots.forEach((dot, i) => {
+  dot.addEventListener("click", () => showHeroSlide(i));
+});
