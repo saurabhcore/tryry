@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1d36">
+  <meta name="description" content="Shop smartphones, laptops, audio, wearables and accessories at TechWorld.">
+  <title>TechWorld — Upgrade Your Tech Life</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="utility-bar">
+    <div class="container utility-inner">
+      <div class="utility-left"><span>♧ Tech Support</span><i></i><span>Free shipping on orders above ₹999</span><i></i><span>7 days easy returns</span></div>
+      <div class="utility-right"><span>↗ Track Order</span><i></i><span>ⓘ Help</span><i></i><span>⌖ India</span></div>
+    </div>
+  </div>
+  <header class="main-header">
+    <div class="container header-main">
+      <a class="logo" href="#top" aria-label="TechWorld home"><span class="logo-mark">🛒</span><span>Tech<span>World</span></span></a>
+      <form class="search" id="searchForm" role="search">
+        <span class="search-icon">⌕</span><input id="searchInput" type="search" placeholder="Search products, brands and more…" aria-label="Search products"><button aria-label="Search">⌕</button>
+      </form>
+      <div class="header-actions">
+        <button class="action account-action" id="accountBtn"><span class="action-icon">♙</span><span><b>Login / Sign Up</b><small>My Account</small></span></button>
+        <button class="action" id="wishlistTop"><span class="action-icon">♡</span><span class="action-label">Wishlist</span><span class="count" id="wishCount">0</span></button>
+        <button class="action" id="cartTop"><span class="action-icon">🛒</span><span class="action-label">Cart</span><span class="count" id="cartCount">0</span></button>
+      </div>
+    </div>
+    <nav class="category-nav"><div class="container nav-inner">
+      <button class="all-categories" data-category="All">▦ &nbsp; All Categories</button>
+      <button data-category="Mobiles">Mobiles</button><button data-category="Laptops">Laptops</button><button data-category="Audio">Audio</button><button data-category="Wearables">Wearables</button><button data-category="Accessories">Accessories</button><button data-category="Gaming">Gaming</button><button data-category="Smart Home">Smart Home</button><button data-category="Tablets">Tablets</button><button class="offers-nav" data-category="Offers">Offers</button>
+    </div></nav>
+  </header>
+  <main id="top">
+    <section class="container hero-wrap">
+      <div class="hero">
+        <div class="hero-copy"><span class="eyebrow"><span class="eyebrow-dot"></span> THE FUTURE, IN YOUR HANDS</span><h1>Upgrade Your <span>Tech Life.</span></h1><p>Discover the latest smartphones, laptops, audio gear and everyday essentials — all in one place.</p><div class="hero-benefits"><span>✓ Top brands</span><span>✓ Great prices</span><span>✓ Easy returns</span></div><div class="hero-buttons"><a class="btn btn-white" href="#featured">Shop now <span>→</span></a><a class="hero-link" href="#categories">Explore categories ↗</a></div><div class="hero-social"><div class="avatar-stack"><span>R</span><span>A</span><span>S</span></div><div><b>10,000+ happy shoppers</b><small>Trusted for your everyday tech</small></div></div></div>
+        <div class="hero-art" aria-label="Featured technology products">
+          <div class="hero-glow"></div><div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+          <div class="hero-device hero-laptop"><img src="assets/laptop-silver.webp" alt="Silver laptop"></div>
+          <div class="hero-device hero-phone"><img src="assets/phone-purple.webp" alt="Smartphone"></div>
+          <div class="hero-device hero-headphones"><img src="assets/headphones-black.webp" alt="Wireless headphones"></div>
+          <div class="hero-device hero-watch"><img src="assets/smartwatch-black.webp" alt="Smart watch"></div>
+          <div class="float-chip chip-one">✦ Bestsellers</div><div class="float-chip chip-two">⚡ Tech deals</div>
+        </div>
+        <button class="hero-arrow hero-prev" aria-label="Previous banner">‹</button><button class="hero-arrow hero-next" aria-label="Next banner">›</button>
+        <div class="hero-dots"><span class="active"></span><span></span><span></span></div>
+      </div>
+    </section>
+    <section class="container brand-strip" aria-label="Featured brands"><div class="brand-heading"><span>SHOP</span><b>TOP BRANDS</b></div><div class="brand-logos"><button data-brand="Apple" class="brand-apple">● Apple</button><button data-brand="Samsung" class="brand-samsung">SAMSUNG</button><button data-brand="OnePlus" class="brand-oneplus">1+ OnePlus</button><button data-brand="Sony" class="brand-sony">SONY</button><button data-brand="boAt" class="brand-boat">bo<span>At</span></button><button data-brand="ASUS" class="brand-asus">ASUS</button><button data-brand="Dell" class="brand-dell">DELL</button><button data-brand="Logitech" class="brand-logitech">logitech</button></div></section>
+    <section class="container categories-section" id="categories"><div class="section-heading"><div><span class="section-kicker">FIND YOUR NEXT FAVOURITE</span><h2>Shop by category</h2></div><a href="#featured" class="view-link">View all categories <span>→</span></a></div><div class="category-grid">
+      <button class="category-tile tile-blue" data-category="Mobiles"><span class="category-img"><img src="assets/phone-blue.webp" alt=""></span><b>Mobiles</b><small>From ₹9,999</small></button>
+      <button class="category-tile tile-purple" data-category="Laptops"><span class="category-img"><img src="assets/laptop-silver.webp" alt=""></span><b>Laptops</b><small>Work & play</small></button>
+      <button class="category-tile tile-peach" data-category="Audio"><span class="category-img"><img src="assets/headphones-black.webp" alt=""></span><b>Audio</b><small>Hear every detail</small></button>
+      <button class="category-tile tile-mint" data-category="Wearables"><span class="category-img"><img src="assets/smartwatch-black.webp" alt=""></span><b>Wearables</b><small>Stay connected</small></button>
+      <button class="category-tile tile-lavender" data-category="Gaming"><span class="category-img"><img src="assets/gaming-laptop.webp" alt=""></span><b>Gaming</b><small>Level up</small></button>
+      <button class="category-tile tile-sky" data-category="Accessories"><span class="category-img"><img src="assets/keyboard-rgb.webp" alt=""></span><b>Accessories</b><small>Little upgrades</small></button>
+    </div></section>
+    <section class="container featured-section" id="featured"><div class="section-heading featured-heading"><div><span class="section-kicker">HANDPICKED FOR YOU</span><h2>Featured products</h2></div><a href="#productGrid" class="view-link" id="viewAll">View all products <span>→</span></a></div>
+      <div class="product-controls"><div class="filter-tabs" id="filterTabs"><button class="active" data-category="All">All products</button><button data-category="Mobiles">Mobiles</button><button data-category="Laptops">Laptops</button><button data-category="Audio">Audio</button><button data-category="Wearables">Wearables</button><button data-category="Accessories">Accessories</button></div><div class="sort-wrap"><label for="sortSelect">Sort by</label><select id="sortSelect"><option value="featured">Featured</option><option value="price-low">Price: low to high</option><option value="price-high">Price: high to low</option><option value="rating">Top rated</option></select></div></div>
+      <div class="product-grid" id="productGrid"></div><div class="empty-state" id="emptyState" hidden><div>⌕</div><h3>No products found</h3><p>Try another search or category.</p><button class="btn btn-primary" id="clearFilters">Clear filters</button></div>
+    </section>
+    <section class="container promise-strip"><div class="promise"><span class="promise-icon">♧</span><div><b>Free & fast delivery</b><small>On eligible orders over ₹999</small></div></div><div class="promise"><span class="promise-icon">↻</span><div><b>Easy 7-day returns</b><small>Shop with peace of mind</small></div></div><div class="promise"><span class="promise-icon">♢</span><div><b>Secure checkout demo</b><small>Safe simulated checkout</small></div></div><div class="promise"><span class="promise-icon">☏</span><div><b>Here to help</b><small>Friendly customer support</small></div></div></section>
+    <section class="container newsletter"><div><span class="section-kicker">THE TECHWORLD EDIT</span><h2>Good tech. Better offers.</h2><p>Get product drops and special offers delivered to your inbox.</p></div><form id="newsletterForm"><input type="email" placeholder="Enter your email address" required aria-label="Email address"><button class="btn btn-primary">Subscribe <span>→</span></button></form></section>
+  </main>
+  <footer><div class="container footer-main"><div class="footer-brand"><a class="logo" href="#top"><span class="logo-mark">🛒</span><span>Tech<span>World</span></span></a><p>Your everyday destination for the tech you love.</p><div class="socials"><span>in</span><span>◎</span><span>f</span><span>▶</span></div></div><div><b>Shop</b><a href="#categories">Mobiles</a><a href="#categories">Laptops</a><a href="#categories">Audio</a><a href="#categories">Accessories</a></div><div><b>Help & support</b><a href="#top">Contact us</a><a href="#top">Track order</a><a href="#top">Returns policy</a><a href="#top">FAQs</a></div><div><b>About TechWorld</b><a href="#top">Our story</a><a href="#top">Careers</a><a href="#top">Privacy policy</a><a href="#top">Terms & conditions</a></div></div><div class="container footer-bottom"><span>© 2026 TechWorld. Demo storefront for educational use.</span><span>🔒 Demo checkout only · No real payments</span></div></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="overlay" id="overlay"></div><aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart"><div class="drawer-header"><div><span class="section-kicker">YOUR BAG</span><h2>Shopping cart <span id="drawerCount">(0)</span></h2></div><button class="close-drawer" id="closeCart" aria-label="Close cart">×</button></div><div class="cart-items" id="cartItems"></div><div class="cart-footer" id="cartFooter"><div class="cart-subtotal"><span>Subtotal</span><b id="cartSubtotal">₹0</b></div><p>Shipping and taxes calculated at checkout.</p><button class="btn btn-primary checkout-btn" id="checkoutBtn">Proceed to demo checkout →</button><small>Demo only — no real payment will be collected.</small></div></aside>
+  <div class="modal" id="checkoutModal" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle"><button class="modal-close" id="closeCheckout" aria-label="Close">×</button><span class="modal-icon">✓</span><span class="section-kicker">DEMO CHECKOUT</span><h2 id="checkoutTitle">Your order preview</h2><p>This is a simulated checkout for project presentation. No payment details are collected and no real transaction will happen.</p><div class="demo-total"><span>Demo order total</span><b id="demoTotal">₹0</b></div><button class="btn btn-primary" id="placeDemoOrder">Place demo order</button></div>
+  <script src="script.js"></script>
+</body>
+</html>
