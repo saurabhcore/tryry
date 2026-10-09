@@ -11,7 +11,20 @@ const products = [
  {id:9,brand:'Logitech',name:'G-Series Keyboard',subtitle:'RGB Gaming Keyboard',category:'Accessories',price:4599,old:5999,rating:4.6,reviews:403,badge:'Gamer choice',badgeType:'',image:'keyboard-rgb.webp',visual:'visual-accessory',specs:['RGB lighting','Mechanical feel','USB wired']},
  {id:10,brand:'Samsung',name:'Galaxy Tab',subtitle:'Everyday Tablet',category:'Tablets',price:21999,old:26999,rating:4.5,reviews:672,badge:'Great value',badgeType:'new',image:'tablet-color.webp',visual:'visual-phone',specs:['10.9” display','128GB','All-day battery']},
  {id:11,brand:'Logitech',name:'MX Anywhere',subtitle:'Wireless Mouse',category:'Accessories',price:2499,old:3299,rating:4.4,reviews:491,badge:'Work essential',badgeType:'',image:'mouse-black.webp',visual:'visual-accessory',specs:['Wireless','Multi-device','USB-C']},
- {id:12,brand:'Dell',name:'Inspiron Ultrabook',subtitle:'Slim Everyday Laptop',category:'Laptops',price:58990,old:65990,rating:4.5,reviews:356,badge:'Smart pick',badgeType:'',image:'laptop-ultrabook.webp',visual:'visual-laptop',specs:['16GB RAM','512GB SSD','Full HD']}
+ {id:12,brand:'Dell',name:'Inspiron Ultrabook',subtitle:'Slim Everyday Laptop',category:'Laptops',price:58990,old:65990,rating:4.5,reviews:356,badge:'Smart pick',badgeType:'',image:'laptop-ultrabook.webp',visual:'visual-laptop',specs:['16GB RAM','512GB SSD','Full HD']},
+ {id:13,brand:'HP',name:'Pavilion Laptop',subtitle:'Everyday Laptop',category:'Laptops',price:55999,old:62999,rating:4.5,reviews:120},
+ {id:14,brand:'Apple',name:'AirPods Pro',subtitle:'Wireless Earbuds',category:'Audio',price:24999,old:29999,rating:4.8,reviews:200},
+ {id:15,brand:'Samsung',name:'Galaxy Buds',subtitle:'Wireless Earbuds',category:'Audio',price:4999,old:6999,rating:4.4,reviews:85},
+ {id:16,brand:'Dell',name:'XPS 13',subtitle:'Premium Laptop',category:'Laptops',price:99999,old:109999,rating:4.8,reviews:180},
+ {id:17,brand:'Lenovo',name:'IdeaPad Slim 5',subtitle:'Slim Laptop',category:'Laptops',price:62999,old:69999,rating:4.5,reviews:145},
+ {id:18,brand:'Samsung',name:'Galaxy S25',subtitle:'5G Smartphone',category:'Mobiles',price:79999,old:84999,rating:4.8,reviews:320},
+ {id:19,brand:'OnePlus',name:'OnePlus 13',subtitle:'Flagship Smartphone',category:'Mobiles',price:69999,old:74999,rating:4.7,reviews:250},
+ {id:20,brand:'Apple',name:'iPad Air',subtitle:'Premium Tablet',category:'Tablets',price:59999,old:64999,rating:4.8,reviews:210},
+ {id:21,brand:'JBL',name:'Flip 6',subtitle:'Portable Bluetooth Speaker',category:'Audio',price:9999,old:11999,rating:4.6,reviews:190},
+ {id:22,brand:'Logitech',name:'MX Master 3S',subtitle:'Wireless Mouse',category:'Accessories',price:8999,old:10999,rating:4.8,reviews:300},
+ {id:23,brand:'boAt',name:'Rockerz 550',subtitle:'Wireless Headphones',category:'Audio',price:1999,old:2999,rating:4.3,reviews:420},
+ {id:24,brand:'ASUS',name:'TUF Gaming F15',subtitle:'Gaming Laptop',category:'Laptops',price:74999,old:82999,rating:4.6,reviews:160},
+ {id:25,brand:'Samsung',name:'Galaxy Watch',subtitle:'Smart Watch',category:'Wearables',price:14999,old:17999,rating:4.5,reviews:130}
 ];
 const state={category:'All',brand:'All',search:'',sort:'featured',cart:{},wishlist:new Set()};
 const $=s=>document.querySelector(s); const $$=s=>[...document.querySelectorAll(s)];
