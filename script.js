@@ -24,7 +24,17 @@ const products = [
  {id:22,brand:'Logitech',name:'MX Master 3S',subtitle:'Wireless Mouse',category:'Accessories',price:8999,old:10999,rating:4.8,reviews:300},
  {id:23,brand:'boAt',name:'Rockerz 550',subtitle:'Wireless Headphones',category:'Audio',price:1999,old:2999,rating:4.3,reviews:420},
  {id:24,brand:'ASUS',name:'TUF Gaming F15',subtitle:'Gaming Laptop',category:'Laptops',price:74999,old:82999,rating:4.6,reviews:160},
- {id:25,brand:'Samsung',name:'Galaxy Watch',subtitle:'Smart Watch',category:'Wearables',price:14999,old:17999,rating:4.5,reviews:130}
+ {id:25,brand:'Samsung',name:'Galaxy Watch',subtitle:'Smart Watch',category:'Wearables',price:14999,old:17999,rating:4.5,reviews:130},
+{id:26,brand:'Logitech',name:'G502 Gaming Mouse',subtitle:'High Performance Gaming Mouse',category:'Gaming',price:3999,old:4999,rating:4.7,reviews:220},
+{id:27,brand:'Razer',name:'BlackWidow Keyboard',subtitle:'Mechanical RGB Gaming Keyboard',category:'Gaming',price:8999,old:10999,rating:4.8,reviews:180},
+{id:28,brand:'Sony',name:'PlayStation Controller',subtitle:'Wireless Gaming Controller',category:'Gaming',price:5999,old:6999,rating:4.7,reviews:260},
+{id:29,brand:'ASUS',name:'ROG Gaming Headset',subtitle:'Surround Sound Headset',category:'Gaming',price:6999,old:8499,rating:4.6,reviews:140},
+{id:30,brand:'MSI',name:'Gaming Monitor',subtitle:'27-inch Full HD Monitor',category:'Gaming',price:15999,old:18999,rating:4.7,reviews:160},
+{id:31,brand:'Philips',name:'Smart LED Bulb',subtitle:'Wi-Fi Color Changing Bulb',category:'Smart Home',price:999,old:1499,rating:4.4,reviews:190},
+{id:32,brand:'TP-Link',name:'Tapo Smart Plug',subtitle:'Wi-Fi Smart Power Plug',category:'Smart Home',price:899,old:1299,rating:4.5,reviews:210},
+{id:33,brand:'Amazon',name:'Echo Dot',subtitle:'Smart Speaker with Alexa',category:'Smart Home',price:4499,old:5499,rating:4.7,reviews:350},
+{id:34,brand:'Xiaomi',name:'Smart Security Camera',subtitle:'Home Security Wi-Fi Camera',category:'Smart Home',price:2499,old:3299,rating:4.5,reviews:230},
+{id:35,brand:'TP-Link',name:'Tapo Smart Switch',subtitle:'Smart Wi-Fi Light Switch',category:'Smart Home',price:1499,old:1999,rating:4.3,reviews:120}
 ];
 const state={category:'All',brand:'All',search:'',sort:'featured',cart:{},wishlist:new Set()};
 const $=s=>document.querySelector(s); const $$=s=>[...document.querySelectorAll(s)];
