@@ -38,36 +38,42 @@ $('#clearFilters').addEventListener('click',()=>{state.category='All';state.bran
 $('#newsletterForm').addEventListener('submit',e=>{e.preventDefault();const email=e.currentTarget.querySelector('input').value;toast(`Thanks for subscribing, ${email}! (demo)`);e.currentTarget.reset()});document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeCart();closeCheckout()}});
 renderProducts();renderCart();
 // Hero banner slider
-const heroSlides = document.querySelectorAll(".hero-slide");
-const heroDots = document.querySelectorAll(".hero-dot");
-const prevButton = document.querySelector("#heroPrev");
-const nextButton = document.querySelector("#heroNext");
+// TechWorld hero slider
+(() => {
+  const hero = document.querySelector(".hero-wrap");
+  if (!hero) return;
 
-let currentHeroSlide = 0;
+  const slides = [...hero.querySelectorAll(".hero-slide")];
+  const dots = [...hero.querySelectorAll(".hero-dots span")];
+  const prev = hero.querySelector(".hero-prev");
+  const next = hero.querySelector(".hero-next");
 
-function showHeroSlide(index) {
-  if (!heroSlides.length) return;
+  if (slides.length < 2) {
+    console.log("Hero slides not found. Check HTML structure.");
+    return;
+  }
 
-  currentHeroSlide =
-    (index + heroSlides.length) % heroSlides.length;
+  let current = 0;
 
-  heroSlides.forEach((slide, i) => {
-    slide.classList.toggle("active", i === currentHeroSlide);
+  function showSlide(index) {
+    current = (index + slides.length) % slides.length;
+
+    slides.forEach((slide, i) => {
+      slide.classList.toggle("active", i === current);
+    });
+
+    dots.forEach((dot, i) => {
+      dot.classList.toggle("active", i === current);
+    });
+  }
+
+  prev?.addEventListener("click", () => showSlide(current - 1));
+  next?.addEventListener("click", () => showSlide(current + 1));
+
+  dots.forEach((dot, i) => {
+    dot.style.cursor = "pointer";
+    dot.addEventListener("click", () => showSlide(i));
   });
 
-  heroDots.forEach((dot, i) => {
-    dot.classList.toggle("active", i === currentHeroSlide);
-  });
-}
-
-prevButton?.addEventListener("click", () => {
-  showHeroSlide(currentHeroSlide - 1);
-});
-
-nextButton?.addEventListener("click", () => {
-  showHeroSlide(currentHeroSlide + 1);
-});
-
-heroDots.forEach((dot, i) => {
-  dot.addEventListener("click", () => showHeroSlide(i));
-});
+  showSlide(0);
+})();
