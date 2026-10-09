@@ -77,3 +77,41 @@ renderProducts();renderCart();
 
   showSlide(0);
 })();
+// TechWorld hero arrows and dots
+document.addEventListener("DOMContentLoaded", () => {
+  const hero = document.querySelector(".hero-wrap");
+  if (!hero) return;
+
+  const prev = hero.querySelector(".hero-prev");
+  const next = hero.querySelector(".hero-next");
+  const dots = [...hero.querySelectorAll(".hero-dots span")];
+
+  // Existing hero visual ko slide ki tarah switch karein
+  const devices = [...hero.querySelectorAll(".hero-device")];
+  let active = 0;
+
+  function updateHero(index) {
+    if (!devices.length) return;
+
+    active = (index + devices.length) % devices.length;
+
+    devices.forEach((device, i) => {
+      device.style.opacity = i === active ? "1" : "0.25";
+      device.style.transform = i === active
+        ? "scale(1.05)"
+        : "scale(0.95)";
+    });
+
+    dots.forEach((dot, i) => {
+      dot.classList.toggle("active", i === active);
+    });
+  }
+
+  prev?.addEventListener("click", () => updateHero(active - 1));
+  next?.addEventListener("click", () => updateHero(active + 1));
+
+  dots.forEach((dot, i) => {
+    dot.style.cursor = "pointer";
+    dot.addEventListener("click", () => updateHero(i));
+  });
+});
